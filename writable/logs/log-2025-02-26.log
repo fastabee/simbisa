@@ -1,0 +1,649 @@
+CRITICAL - 2025-02-26 03:27:25 --> ErrorException: Undefined property: stdClass::$userid
+in APPPATH\Views\Admin\dosen\list.php on line 95.
+ 1 APPPATH\Views\Admin\dosen\list.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\dosen\\list.php', 95)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\dosen\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Dosen.php(33): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 03:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 03:34:24 --> ErrorException: Undefined property: stdClass::$nama
+in APPPATH\Views\Admin\dosen\form_edit.php on line 14.
+ 1 APPPATH\Views\Admin\dosen\form_edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\dosen\\form_edit.php', 14)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\dosen\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Dosen.php(90): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->edit('fas')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-26 03:37:02 --> mysqli_sql_exception: Unknown column 'data_dosen.id' in 'where clause' in C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_do...', 0)
+#1 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_do...')
+#2 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_do...')
+#3 C:\xampp\htdocs\simbisa\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_do...', Array, false)
+#4 C:\xampp\htdocs\simbisa\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\simbisa\system\BaseModel.php(987): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\simbisa\system\Model.php(807): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\simbisa\app\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', Array)
+#8 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+#9 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#10 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\simbisa\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-02-26 03:37:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:37:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:37:02 --> [Caused by] mysqli_sql_exception: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-26 03:37:42 --> mysqli_sql_exception: Unknown column 'data_dosen.id' in 'where clause' in C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_do...', 0)
+#1 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_do...')
+#2 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_do...')
+#3 C:\xampp\htdocs\simbisa\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_do...', Array, false)
+#4 C:\xampp\htdocs\simbisa\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\simbisa\system\BaseModel.php(987): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\simbisa\system\Model.php(807): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\simbisa\app\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', Array)
+#8 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+#9 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#10 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\simbisa\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-02-26 03:37:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:37:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:37:42 --> [Caused by] mysqli_sql_exception: Unknown column 'data_dosen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_dosen` SET `userid` = \'fas1\', `nama` = \'Wijaya2\', `alamat` = \'Jember3\'
+WHERE `data_dosen`.`id` IN (\'fas1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_dosen` SET `userid` = :userid:, `nama` = :nama:, `alamat` = :alamat:
+WHERE `data_dosen`.`id` IN :data_dosen.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Dosen.php(113): CodeIgniter\Model->update('fas1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas1')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:42:07 --> CodeIgniter\Exceptions\ModelException: "App\Models\ModelDosen" model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 652.
+ 1 SYSTEMPATH\Model.php(652): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\ModelDosen')
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelDosen.php(51): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\Dosen.php(88): App\Models\ModelDosen->getByUserId('fas')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->edit('fas')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:42:08 --> CodeIgniter\Exceptions\ModelException: "App\Models\ModelDosen" model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 652.
+ 1 SYSTEMPATH\Model.php(652): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\ModelDosen')
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelDosen.php(28): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Dosen.php(30): App\Models\ModelDosen->getdosen()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 03:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 03:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 03:53:19 --> Error: Call to a member function getErrors() on null
+in SYSTEMPATH\BaseModel.php on line 1209.
+ 1 APPPATH\Controllers\Dosen.php(125): CodeIgniter\BaseModel->errors()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas3')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 03:56:03 --> Error: Call to a member function getErrors() on null
+in SYSTEMPATH\BaseModel.php on line 1209.
+ 1 APPPATH\Controllers\Dosen.php(123): CodeIgniter\BaseModel->errors()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->update('fas3')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 04:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 04:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 04:08:57 --> BadMethodCallException: Call to undefined method App\Models\ModelDosen::deleteUser
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Dosen.php(133): CodeIgniter\Model->__call('deleteUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->delete('E21203467d')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 04:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 05:17:02 --> BadMethodCallException: Call to undefined method App\Models\ModelMahasiswa::getByUserId
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Mahasiswa.php(96): CodeIgniter\Model->__call('getByUserId', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->edit('fasf')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 05:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 05:18:32 --> BadMethodCallException: Call to undefined method App\Models\ModelMahasiswa::getByUserId
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Mahasiswa.php(96): CodeIgniter\Model->__call('getByUserId', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->edit('a12')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 05:19:32 --> ErrorException: Undefined property: stdClass::$nama
+in APPPATH\Views\Admin\mahasiswa\form_edit.php on line 14.
+ 1 APPPATH\Views\Admin\mahasiswa\form_edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\mahasiswa\\form_edit.php', 14)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\mahasiswa\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Mahasiswa.php(98): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->edit('a12')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 05:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 05:50:22 --> ErrorException: Undefined property: stdClass::$alamat
+in APPPATH\Views\Admin\mahasiswa\form_edit.php on line 25.
+ 1 APPPATH\Views\Admin\mahasiswa\form_edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$alamat', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\mahasiswa\\form_edit.php', 25)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\mahasiswa\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Mahasiswa.php(98): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->edit('E4120444')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 05:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 05:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 06:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 07:48:18 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$userid
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 6.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 6)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:50:43 --> ErrorException: Undefined property: mysqli::$id_dosen
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 17.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_dosen', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 17)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:51:20 --> ErrorException: Undefined property: mysqli::$userid
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 17.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 17)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:53:57 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 18.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 18)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:54:17 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 18.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 18)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:54:26 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 18.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 18)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:54:52 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Pembagian.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:54:59 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 18.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 18)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 07:56:36 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 18.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 18)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:03:23 --> ErrorException: Undefined property: stdClass::$dosen
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 19.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$dosen', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 19)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:09:19 --> ErrorException: Attempt to read property "userid" on null
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 6.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "userid" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 6)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('list')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:09:22 --> ErrorException: Attempt to read property "userid" on null
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 6.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "userid" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 6)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(38): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('list')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:09:43 --> ErrorException: Undefined variable $data
+in APPPATH\Views\Admin\pembagian\list.php on line 91.
+ 1 APPPATH\Views\Admin\pembagian\list.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\list.php', 91)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(28): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:10:25 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(53): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update('E412898989')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:12:31 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(54): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update('E412898989')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:13:46 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(54): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:15:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(55): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:16:54 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(63): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:16:59 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\Pembagian.php(63): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-26 08:18:46 --> mysqli_sql_exception: Table 'simbisa.mahasiswa' doesn't exist in C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `mahasis...', 0)
+#1 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mahasis...')
+#2 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mahasis...')
+#3 C:\xampp\htdocs\simbisa\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `mahasis...', Array, false)
+#4 C:\xampp\htdocs\simbisa\app\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\simbisa\app\Controllers\Pembagian.php(55): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', Array)
+#6 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+#7 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+#8 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\simbisa\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-26 08:18:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'simbisa.mahasiswa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `mahasiswa` SET `pembimbing_1` = :pembimbing_1:, `pembimbing_2` = :pembimbing_2:
+WHERE `userid` = :userid:', [...], false)
+ 2 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Pembagian.php(55): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:18:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'simbisa.mahasiswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mahasiswa` SET `pembimbing_1` = \' Satria\', `pembimbing_2` = \' Satria\'
+WHERE `userid` = \'E412898989\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mahasiswa` SET `pembimbing_1` = \' Satria\', `pembimbing_2` = \' Satria\'
+WHERE `userid` = \'E412898989\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `mahasiswa` SET `pembimbing_1` = :pembimbing_1:, `pembimbing_2` = :pembimbing_2:
+WHERE `userid` = :userid:', [...], false)
+ 4 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 APPPATH\Controllers\Pembagian.php(55): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:18:46 --> [Caused by] mysqli_sql_exception: Table 'simbisa.mahasiswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `mahasiswa` SET `pembimbing_1` = \' Satria\', `pembimbing_2` = \' Satria\'
+WHERE `userid` = \'E412898989\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mahasiswa` SET `pembimbing_1` = \' Satria\', `pembimbing_2` = \' Satria\'
+WHERE `userid` = \'E412898989\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mahasiswa` SET `pembimbing_1` = \' Satria\', `pembimbing_2` = \' Satria\'
+WHERE `userid` = \'E412898989\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `mahasiswa` SET `pembimbing_1` = :pembimbing_1:, `pembimbing_2` = :pembimbing_2:
+WHERE `userid` = :userid:', [...], false)
+ 5 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Pembagian.php(55): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->update()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:20:18 --> ErrorException: Undefined property: stdClass::$dosen
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 20.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$dosen', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 20)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(39): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:24:50 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 20.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 20)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(39): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 08:25:57 --> ErrorException: Undefined property: mysqli::$nama
+in APPPATH\Views\Admin\pembagian\form_edit.php on line 20.
+ 1 APPPATH\Views\Admin\pembagian\form_edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php', 20)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pembagian\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pembagian.php(39): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pembagian->edit('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembagian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 09:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 09:51:38 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->cekrole()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-26 09:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-26 09:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-26 09:59:16 --> ErrorException: Undefined variable $body
+in APPPATH\Views\templateM.php on line 238.
+ 1 APPPATH\Views\templateM.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php', 238)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateM', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('templateM')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->indexM()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 09:59:18 --> ErrorException: Undefined variable $body
+in APPPATH\Views\templateM.php on line 238.
+ 1 APPPATH\Views\templateM.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php', 238)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateM', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('templateM')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->indexM()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-26 09:59:35 --> ErrorException: Undefined variable $body
+in APPPATH\Views\templateM.php on line 234.
+ 1 APPPATH\Views\templateM.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php', 234)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateM.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateM', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('templateM')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->indexM()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

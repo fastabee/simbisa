@@ -1,0 +1,549 @@
+INFO - 2025-03-02 07:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 07:17:43 --> ErrorException: mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing
+in APPPATH\Controllers\Mahasiswa.php on line 255.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Mahasiswa.php', 255)
+ 2 APPPATH\Controllers\Mahasiswa.php(255): mail('fastabikul87@gmail.com', 'Subject Email', 'Ini adalah isi pesan email.', 'bee@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->resetpw()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 07:18:23 --> ErrorException: mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing
+in APPPATH\Controllers\Mahasiswa.php on line 255.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Mahasiswa.php', 255)
+ 2 APPPATH\Controllers\Mahasiswa.php(255): mail('fastabikul87@gmail.com', 'Subject Email', 'Ini adalah isi pesan email.', 'bee@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Mahasiswa->resetpw()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-02 07:45:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 07:45:18 --> 220 smtp.gmail.com ESMTP d9443c01a7336-223504db7a6sm56810975ad.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-223504db7a6sm56810975ad.160 - gsmtp
+
+ERROR - 2025-03-02 07:49:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 07:49:30 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2fea69909basm6582323a91.46 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fea69909basm6582323a91.46 - gsmtp
+
+ERROR - 2025-03-02 07:50:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 07:50:06 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2fe8284f121sm8778227a91.47 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fe8284f121sm8778227a91.47 - gsmtp
+
+INFO - 2025-03-02 08:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 08:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:13:22 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Dosen.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:16:58 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$userid
+in APPPATH\Controllers\Dosen.php on line 163.
+ 1 APPPATH\Controllers\Dosen.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Dosen.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:17:43 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$userid
+in APPPATH\Controllers\Dosen.php on line 163.
+ 1 APPPATH\Controllers\Dosen.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Dosen.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:18:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Dosen.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:18:45 --> ErrorException: Attempt to read property "userid" on array
+in APPPATH\Controllers\Dosen.php on line 163.
+ 1 APPPATH\Controllers\Dosen.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "userid" on array', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Dosen.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:19:08 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$userid
+in APPPATH\Controllers\Dosen.php on line 163.
+ 1 APPPATH\Controllers\Dosen.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$userid', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Dosen.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:27:54 --> ErrorException: Undefined variable $jumlah
+in APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php on line 76.
+ 1 APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php', 76)
+ 2 APPPATH\Views\templateD.php(227): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateD.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateD', [], true)
+ 6 APPPATH\Controllers\Dosen.php(168): view('templateD', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:31:43 --> ErrorException: Undefined variable $jumlah
+in APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php on line 76.
+ 1 APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php', 76)
+ 2 APPPATH\Views\templateD.php(227): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateD.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateD', [], true)
+ 6 APPPATH\Controllers\Dosen.php(168): view('templateD', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 09:32:22 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php on line 102.
+ 1 APPPATH\Views\Dosen\infobimbingan\infobimbingan1.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php', 102)
+ 2 APPPATH\Views\templateD.php(227): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\infobimbingan1.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateD.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateD', [], true)
+ 6 APPPATH\Controllers\Dosen.php(168): view('templateD', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan1()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 09:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 09:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 10:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 10:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 10:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 17:33:46 --> ArgumentCountError: Too few arguments to function App\Controllers\Dosen::terimaJudul(), 0 passed in C:\xampp\htdocs\simbisa\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Dosen.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimaJudul()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:34:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Dosen::terimajudul(), 0 passed in C:\xampp\htdocs\simbisa\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Dosen.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:35:27 --> ErrorException: Undefined variable $id
+in APPPATH\Views\Dosen\infobimbingan\persetujuan_judul.php on line 137.
+ 1 APPPATH\Views\Dosen\infobimbingan\persetujuan_judul.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\persetujuan_judul.php', 137)
+ 2 APPPATH\Views\templateD.php(237): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Dosen\\infobimbingan\\persetujuan_judul.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateD.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateD', [], true)
+ 6 APPPATH\Controllers\Dosen.php(181): view('templateD', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->acc_judul('E412898989')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:36:17 --> ArgumentCountError: Too few arguments to function App\Controllers\Dosen::terimajudul(), 0 passed in C:\xampp\htdocs\simbisa\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Dosen.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 17:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-02 17:45:37 --> mysqli_sql_exception: Unknown column 'judul' in 'field list' in C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\simbisa\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_ma...', 0)
+#1 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_ma...')
+#2 C:\xampp\htdocs\simbisa\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_ma...')
+#3 C:\xampp\htdocs\simbisa\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ma...', Array, false)
+#4 C:\xampp\htdocs\simbisa\app\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\simbisa\app\Controllers\Dosen.php(200): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', Array)
+#6 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul('1')
+#7 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#8 C:\xampp\htdocs\simbisa\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\simbisa\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-02 17:45:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'judul' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mahasiswa` SET `judul` = :judul:
+WHERE `userid` = :userid:', [...], false)
+ 2 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Dosen.php(200): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:45:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mahasiswa` SET `judul` = \'ayo\'
+WHERE `userid` = \'E412898989\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mahasiswa` SET `judul` = \'ayo\'
+WHERE `userid` = \'E412898989\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mahasiswa` SET `judul` = :judul:
+WHERE `userid` = :userid:', [...], false)
+ 4 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 APPPATH\Controllers\Dosen.php(200): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:45:37 --> [Caused by] mysqli_sql_exception: Unknown column 'judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `data_mahasiswa` SET `judul` = \'ayo\'
+WHERE `userid` = \'E412898989\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mahasiswa` SET `judul` = \'ayo\'
+WHERE `userid` = \'E412898989\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mahasiswa` SET `judul` = \'ayo\'
+WHERE `userid` = \'E412898989\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mahasiswa` SET `judul` = :judul:
+WHERE `userid` = :userid:', [...], false)
+ 5 APPPATH\Models\ModelMahasiswa.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Dosen.php(200): App\Models\ModelMahasiswa->updateMahasiswa('E412898989', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 17:45:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Dosen.php(199): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->terimajudul('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 17:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 17:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 19:17:57 --> Error: Call to a member function getResult() on array
+in APPPATH\Views\Dosen\infobimbingan\infobimbingan2.php on line 96.
+ 1 APPPATH\Views\templateD.php(241): include()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\templateD.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templateD', [], true)
+ 5 APPPATH\Controllers\Dosen.php(231): view('templateD', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->infoBimbingan2()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-02 19:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-02 19:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-02 19:23:27 --> Error: Call to a member function setFrom() on null
+in APPPATH\Controllers\Dosen.php on line 239.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->emailnya()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-02 19:26:55 --> Error: Call to a member function setFrom() on null
+in APPPATH\Controllers\Dosen.php on line 240.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->emailnya()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-02 19:27:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:27:31 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2fe6dee1306sm5969849a91.1 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fe6dee1306sm5969849a91.1 - gsmtp
+
+CRITICAL - 2025-03-02 19:27:31 --> ErrorException: Undefined property: CodeIgniter\Email\Email::$send
+in APPPATH\Controllers\Dosen.php on line 249.
+ 1 APPPATH\Controllers\Dosen.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Email\\Email::$send', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Dosen.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dosen->emailnya()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-02 19:29:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:29:10 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2fea676cd6csm7371290a91.20 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fea676cd6csm7371290a91.20 - gsmtp
+
+ERROR - 2025-03-02 19:29:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:29:38 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2fea696e40csm7378535a91.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fea696e40csm7378535a91.34 - gsmtp
+
+ERROR - 2025-03-02 19:30:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:30:55 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-7364d4fd2e0sm1112169b3a.120 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7364d4fd2e0sm1112169b3a.120 - gsmtp
+
+ERROR - 2025-03-02 19:31:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:31:51 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-734a002474esm7281952b3a.86 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a002474esm7281952b3a.86 - gsmtp
+
+ERROR - 2025-03-02 19:31:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:31:51 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-734a002474esm7281952b3a.86 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a002474esm7281952b3a.86 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a002474esm7281952b3a.86 - gsmtp
+
+ERROR - 2025-03-02 19:32:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:32:39 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-734a003eb5asm7556544b3a.136 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a003eb5asm7556544b3a.136 - gsmtp
+
+ERROR - 2025-03-02 19:32:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:32:40 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-734a003eb5asm7556544b3a.136 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a003eb5asm7556544b3a.136 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-734a003eb5asm7556544b3a.136 - gsmtp
+
+ERROR - 2025-03-02 19:34:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-02 19:34:16 --> 220 smtp.gmail.com ESMTP d9443c01a7336-223501d5584sm63833285ad.2 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.172.70.43]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-223501d5584sm63833285ad.2 - gsmtp
+
+INFO - 2025-03-02 20:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

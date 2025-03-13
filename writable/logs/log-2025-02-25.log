@@ -1,0 +1,306 @@
+CRITICAL - 2025-02-25 05:57:24 --> ErrorException: include(Admin/dashboardphp): Failed to open stream: No such file or directory
+in APPPATH\Views\template.php on line 233.
+ 1 APPPATH\Views\template.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(Admin/dashboardphp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php', 233)
+ 2 APPPATH\Views\template.php(233): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Home.php(13): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:29:27 --> Error: Class "APP\Models\ModelPedoman" not found
+in APPPATH\Controllers\Pedoman.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Pedoman->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:29:32 --> Error: Class "APP\Models\ModelPedoman" not found
+in APPPATH\Controllers\Pedoman.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Pedoman->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:30:15 --> Error: Class "APP\Models\ModelPedoman" not found
+in APPPATH\Controllers\Pedoman.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Pedoman->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:31:35 --> Error: Class "APP\Models\ModelPedoman" not found
+in APPPATH\Controllers\Pedoman.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Pedoman->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:32:49 --> Error: Class "APP\Models\ModelPedoman" not found
+in APPPATH\Controllers\Pedoman.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Pedoman->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 16:34:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Home/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/index', [], true)
+ 3 APPPATH\Controllers\Pedoman.php(35): view('Home/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->input()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 17:04:19 --> ErrorException: include(Admin/dashboard  .php): Failed to open stream: No such file or directory
+in APPPATH\Views\template.php on line 238.
+ 1 APPPATH\Views\template.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(Admin/dashboard  .php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php', 238)
+ 2 APPPATH\Views\template.php(238): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Home.php(13): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 17:05:15 --> ErrorException: include(Admin/dashboard  .php): Failed to open stream: No such file or directory
+in APPPATH\Views\template.php on line 238.
+ 1 APPPATH\Views\template.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(Admin/dashboard  .php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php', 238)
+ 2 APPPATH\Views\template.php(238): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Home.php(13): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 17:44:11 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Pedoman.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 17:45:18 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Pedoman.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 17:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 18:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 18:40:36 --> ArgumentCountError: Too few arguments to function App\Controllers\Pedoman::edit(), 0 passed in C:\xampp\htdocs\simbisa\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Pedoman.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:41:45 --> BadMethodCallException: Call to undefined method App\Models\ModelPedoman::get_pedoman
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Pedoman.php(83): CodeIgniter\Model->__call('get_pedoman', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:43:05 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$nama
+in APPPATH\Views\Admin\pedoman\form_edit.php on line 9.
+ 1 APPPATH\Views\Admin\pedoman\form_edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php', 9)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pedoman.php(85): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->edit('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:44:02 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$nama
+in APPPATH\Views\Admin\pedoman\form_edit.php on line 9.
+ 1 APPPATH\Views\Admin\pedoman\form_edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php', 9)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pedoman.php(85): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->edit('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:44:29 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$nama
+in APPPATH\Views\Admin\pedoman\form_edit.php on line 9.
+ 1 APPPATH\Views\Admin\pedoman\form_edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$nama', 'C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php', 9)
+ 2 APPPATH\Views\template.php(238): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\Admin\\pedoman\\form_edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\simbisa\\app\\Views\\template.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template', [], true)
+ 6 APPPATH\Controllers\Pedoman.php(85): view('template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->edit('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 18:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 18:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 18:50:40 --> ParseError: Unmatched '}'
+in APPPATH\Controllers\Pedoman.php on line 123.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pedoman')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pedoman')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Pedoman', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 18:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 18:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 18:53:26 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$filenya
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$filenya', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:54:38 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 102.
+ 1 APPPATH\Controllers\Pedoman.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:55:08 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$filenya
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$filenya', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:56:12 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$filenya
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$filenya', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:56:15 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$filenya
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$filenya', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:57:12 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:57:28 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 18:58:31 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 103.
+ 1 APPPATH\Controllers\Pedoman.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 19:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 19:01:50 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 100.
+ 1 APPPATH\Controllers\Pedoman.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:02:36 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 100.
+ 1 APPPATH\Controllers\Pedoman.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:02:40 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 100.
+ 1 APPPATH\Controllers\Pedoman.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:03:38 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 94.
+ 1 APPPATH\Controllers\Pedoman.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:03:41 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 94.
+ 1 APPPATH\Controllers\Pedoman.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 19:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 19:15:25 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$filenya
+in APPPATH\Controllers\Pedoman.php on line 106.
+ 1 APPPATH\Controllers\Pedoman.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$filenya', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 19:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 19:21:18 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 101.
+ 1 APPPATH\Controllers\Pedoman.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:22:42 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 101.
+ 1 APPPATH\Controllers\Pedoman.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:22:46 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 101.
+ 1 APPPATH\Controllers\Pedoman.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-25 19:23:24 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 101.
+ 1 APPPATH\Controllers\Pedoman.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 19:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 19:25:10 --> ErrorException: Attempt to read property "filenya" on null
+in APPPATH\Controllers\Pedoman.php on line 102.
+ 1 APPPATH\Controllers\Pedoman.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "filenya" on null', 'C:\\xampp\\htdocs\\simbisa\\app\\Controllers\\Pedoman.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pedoman->update('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedoman))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-25 19:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 19:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
