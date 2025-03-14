@@ -18,7 +18,7 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'smtp';
+    public string $protocol = '';
 
     /**
      * The server path to Sendmail.
@@ -28,18 +28,18 @@ class Email extends BaseConfig
     /**
      * SMTP Server Hostname
      */
-    public string $SMTPHost = 'smtp.gmail.com';
+    public string $SMTPHost = '';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'fastabikul87@gmail.com';
+    public string $SMTPUser = '';
 
 
     /**
      * SMTP Password 
      */
-    public string $SMTPPass = 'jezjhqyahlowvgmt';
+    public string $SMTPPass = '';
 
     /**
      * SMTP Port
